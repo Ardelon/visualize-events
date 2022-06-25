@@ -1,0 +1,44 @@
+body {
+    margin: 20px;
+    background-color:  hsl(205,14%,28%);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.counter-table {
+    display: flex;
+    max-width: 900px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.event-area {
+    width: 500px;
+    height: 500px;
+    background-color:  #f1f1f1;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+.counter {
+    width: 40%;
+    min-width: 200px;
+    margin: 10px;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+
+}
+
+@keyframes event-fired-animation {
+    
+    from {background-color: red;}
+    to {background-color: white;}
+  }
+  
+  /* The element to apply the animation to */
+  .event-fired {
+   color: black;
+    animation-name: event-fired-animation;
+    animation-duration: .1s;
+  }
